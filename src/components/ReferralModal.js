@@ -7,7 +7,7 @@ const ReferralModal = ({ isOpen, onClose }) => {
   const onSubmit = async (data) => {
     console.log('Form Data:', data);
     try {
-      const response = await fetch('http://localhost:5000/api/referrals', {
+      const response = await fetch('https://accredian-backend-task-ragna.onrender.com/api/referrals', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
